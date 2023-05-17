@@ -20,7 +20,7 @@ public class ProgrammingProject {
         
         // create an object of the FileCompressor class to compress the source file 
         FileCompressor compressor = new FileCompressor(sourceFile, targetFile, huffmanCodes);
-        //compressor.compressHuffmanCodes();
+        compressor.compressHuffmanCodes();
         compressor.compressBinaryContent();      
     }   
 }
