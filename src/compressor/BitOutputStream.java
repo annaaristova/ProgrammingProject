@@ -33,12 +33,12 @@ class BitOutputStream {
         }
     }
 
-    public void close() throws IOException {
-        //if the last byte is not full, invoke writeBit() function
-        //to left-shift with zeros       
+    public void close() throws IOException {    
         if (count == 0){
             output.close();
         }
+        //if the last byte is not full, invoke writeBit() function
+        //to left-shift with zeros   
         else{
             int addZero = 8 - count;
             for (int i=0; i<addZero; i++){
